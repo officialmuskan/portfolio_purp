@@ -46,12 +46,12 @@ export default function Timeline(props) {
       } ];
     return(
         <>
-            <div id='about' className="max-width2">
+            <di v id='about' className="max-width2">
                 
             <h2><mark class='pink-highlight'>About Me</mark> </h2>
             <div className="contentin">
                 
-                <Chrono classNames={{card: props.mode === 'dark' ? 'mycard':'cardlight' , cardSubTitle: 'my-card-subtitle'}} items={items} mode="VERTICAL_ALTERNATING" cardHeight="100vw"
+                <Chrono disableToolbar="true" classNames={{card: props.mode === 'dark' ? 'mycard':'cardlight' , cardSubTitle: 'my-card-subtitle'}} items={items} mode="VERTICAL_ALTERNATING" cardHeight="100vw"
                 theme={{primary: '#33CCFF',
                     secondary: '#252746',
                     cardBgColor:props.mode === 'dark' ? "#464866":'white',
@@ -59,7 +59,7 @@ export default function Timeline(props) {
                     titleColorActive: '#33CCFF',}} enableBreakPoint="true" responsiveBreakPoint="600"/>
                 
             </div>
-                </div>
+                </di>
                 
                
 
