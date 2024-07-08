@@ -46,7 +46,7 @@ export default function Timeline(props) {
       } ];
     return(
         <>
-            <di v id='about' className="max-width2">
+            <div id='about' className="max-width2">
                 
             <h2><mark class='pink-highlight'>About Me</mark> </h2>
             <div className="contentin">
