@@ -1,0 +1,245 @@
+.tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 150px 0px 150px;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.tools.light-mode {
+  background-color: var(--text-color);
+}
+@media screen and (max-width: 1300px) and (min-width: 800px) {
+  .icon .iconsbs a {
+    height: 7rem !important;
+    width: 7rem !important;
+    font-size: clamp(50px, 7vw + 10px, 100px) !important;
+
+    transform: rotate(calc(360deg / 6 * var(--i))) translate(180%)
+      rotate(calc(-60deg * (var(--i)))) !important;
+    padding: 22px !important;
+  }
+  .one {
+    padding-left: 50px !important;
+  }
+}
+
+.one h2 mark {
+  font-size: clamp(25px, 3vw + 10px, 30px) !important;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.one,
+.second {
+  width: 50vw;
+  height: 70vh;
+}
+.second {
+  position: relative;
+  width: 50%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  top: 30%;
+  left: 30%;
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+.icon div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 13px;
+}
+.iconbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon .iconsbs a {
+  color: #464866;
+  font-size: 80px;
+  position: absolute;
+  transition: 0.5s;
+  transform: rotate(calc(360deg / 6* var(--i))) translate(200px)
+    rotate(calc(-60deg * (var(--i))));
+  transform-origin: 250px;
+  height: 120px;
+  width: 120px;
+}
+
+.iconsbs a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.142));
+}
+
+.iconsbs a::before {
+  content: "";
+  position: absolute;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.iconsbs a:hover::before {
+  transform: scale(1.1);
+}
+
+.iconsbs a:hover {
+  filter: drop-shadow(0 0 20px var(--secondary-color));
+  color: var(--secondary-color);
+  text-shadow: 0 0 10px var(--secondary-color) !important;
+}
+
+
+.skills {
+  position: relative;
+  width: 40%;
+  min-width: 450px;
+  top: 5%;
+}
+.skills.light-mode {
+  color: #464866;
+}
+
+.skill-container {
+  width: 100%;
+  background-color: white;
+  height: 18px;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.progressbar {
+  margin-top: 10px;
+  background: #464866;
+  height: 18px;
+  width: 0;
+}
+.progressbarhtml {
+  animation: progress-html 3s normal forwards;
+}
+.progressbarcss {
+  animation: progress-css 3s normal forwards;
+}
+.progressbarjs {
+  animation: progress-js 3s normal forwards;
+}
+.progressbarreact {
+  animation: progress-react 3s normal forwards;
+}
+.progressbarmongo {
+  animation: progress-mongo 3s normal forwards;
+}
+.progressbarc {
+  animation: progress-c 3s normal forwards;
+}
+
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes progress-js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes progress-mongo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes progress-c {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .icon .iconsbs a {
+    height: 6rem !important;
+    width: 6rem !important;
+    font-size: clamp(50px, 7vw + 10px, 90px) !important;
+    transform: rotate(calc(360deg / 6 * var(--i))) translate(120%)
+      rotate(calc(-60deg * (var(--i)))) !important;
+    padding: 22px !important;
+    left: 36% !important;
+  }
+  .tools {
+    flex-direction: column-reverse;
+    padding: 0 0;
+  }
+  .one {
+    padding: 25px !important;
+  }
+  .one,
+  .second {
+    width: 100vw !important;
+    height: 100vh;
+  }
+  .skills {
+    width: 100% !important;
+    min-width: 70vw !important;
+    left: 0% !important;
+  }
+  .second {
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    height: 40vh !important;
+  }
+  .icon {
+    top: 10% !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

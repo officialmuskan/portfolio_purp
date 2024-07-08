@@ -1,0 +1,144 @@
+/* background =  #252746
+logo text = #33CCFF font Monsterrat
+nav-link = #E0E0E1 same*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+  z-index: var(--z-fixed);
+}
+.nav {
+    background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: var(--header-height);
+  margin: 1rem 2rem;
+}
+.box {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  /* border-radius: 50%; */
+  /* background-image: url("../assets/profile-pic (3).png"); */
+}
+.nav__logo {
+    
+  color: #33ccff;
+  transition: color 0.4s;
+  font-size: var(--h2-font-size);
+  font-family: var(--body-font);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav__toggle,
+.nav__close {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.nav__toggle.light-mode,
+.nav__close.light-mode {
+  font-size: 1.5rem;
+  color: #252746;
+  cursor: pointer;
+}
+
+
+
+.nav__link {
+  color: var(--text-color);
+  font-family: "Open Sans";
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+  font-size: 1.1rem;
+}
+
+.nav__link:hover {
+  color: var(--secondary-color) !important;
+}
+.nav__link.light-mode {
+    color: #252746; /* Light mode color */
+  }
+  
+.nav__link.dark-mode {
+    color: #E0E0E1; /* Dark mode color */
+  }
+.nav__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.show-menu {
+  right: 0 !important;
+}
+.nav__list__web {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  .nav__moon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: grey;
+  }
+  
+/* max-width: 768px ensures the styles are implemented 
+only when the device width is 768px or lower. */
+@media screen and (max-width: 850px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: var(--background-col);
+        /* backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px); */
+        width: 100%;
+        /* height: 60%; */
+        padding: 2.3rem 3rem 2rem;
+        transition: top 0.4s;
+      }
+      .nav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem !important;
+        
+      }
+      .nav__menu.light-mode{
+        background-color: var(--secondary-color);
+      }
+
+      .nav__sun{
+    font-size: 1.5rem;
+      color: yellow;
+      cursor: pointer;
+}}
+
+@media screen and (min-width: 850px) {
+  .nav {
+    height: calc(var(--header-height)+1rem);
+  }
+  
+  .nav__sun{
+    font-size: 1.5rem;
+  color: yellow;
+  cursor: pointer;
+
+}
+  
+}
