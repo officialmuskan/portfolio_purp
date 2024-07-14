@@ -38,9 +38,9 @@ li{
 .mycard span{
     color: var(--secondary-color) !important;
 }
-.hxLLRt{
+/* .hxLLRt{
     display: none !important;
-}
+} */
 
 @media (max-width: 691px) {
     .max-width2{
