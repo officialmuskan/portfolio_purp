@@ -5,6 +5,9 @@
     margin: 0 auto 0 auto;
     padding: 0 80px;
 }
+.contentin{
+    margin-top: 20px !important;
+}
 .jIatKG h1{
     font-size: 1.2rem;
     color: var(--secondary-color);
