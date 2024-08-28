@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: radial-gradient(#000000ac, var(--background-col), var(--background-col));
+    background: radial-gradient(circle, #000000ac, var(--background-col), var(--background-col));
+    -webkit-background: 100% 100%;
     
     
     

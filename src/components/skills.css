@@ -1,15 +1,44 @@
-.tools {
+/* .tools {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin: 0px 150px 0px 150px;
+  align-items: center; */
+  /* margin: 0px 120px 0px 120px;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0px;
+  max-width: 1300px;
+} */
+.tools{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  max-width: 1300px;
+  padding: 0 10px 0 90px;
+  margin: auto;
+  /* margin: 50px auto 0 auto; */
+  /* border: 5px solid black; */
+  /* overflow: hidden; */
+}
+@media screen and (max-width: 1000px) and (min-width: 800px){
+  .icon .iconsbs a {
+    height: 5rem !important;
+    width: 5rem !important;
+    
+
+    transform: rotate(calc(360deg / 6 * var(--i))) translate(180%)
+      rotate(calc(-60deg * (var(--i)))) !important;
+          /* padding: 22px !important; */
+  }
+  .second{
+    margin-left: 50px;
+  }
 }
 .tools.light-mode {
   background-color: var(--text-color);
 }
-@media screen and (max-width: 1300px) and (min-width: 800px) {
+
+/* @media screen and (max-width: 1300px) and (min-width: 800px) { 
   .icon .iconsbs a {
     height: 7rem !important;
     width: 7rem !important;
@@ -19,10 +48,8 @@
       rotate(calc(-60deg * (var(--i)))) !important;
     padding: 22px !important;
   }
-  .one {
-    padding-left: 50px !important;
-  }
-}
+  
+} */ */
 
 .one h2 mark {
   font-size: clamp(25px, 3vw + 10px, 30px) !important;
@@ -37,13 +64,15 @@
 .second {
   width: 50vw;
   height: 70vh;
+  
 }
 .second {
   position: relative;
-  width: 50%;
-  padding-right: 5%;
+  /* width: 50%; */
+  
+  /* padding-right: ; */
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .icon {
   top: 30%;
@@ -195,6 +224,22 @@
     width: 65%;
   }
 }
+
+@media (max-width: 991px) {
+  .tools{
+      padding: 0 50px;
+  }
+}
+
+@media (max-width: 691px) {
+  .tools{
+      padding: 0 20px;
+      margin: 0px auto;
+  }
+  
+}
+
+
 @keyframes progress-c {
   0% {
     width: 0%;
@@ -203,7 +248,7 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .icon .iconsbs a {
     height: 6rem !important;
     width: 6rem !important;

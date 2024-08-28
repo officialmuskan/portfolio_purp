@@ -19,13 +19,12 @@ export default function Skills(props) {
           <h2><mark class='pink-highlight'>Skills and Proficiency</mark> </h2>
 
           <div className={`skills ${props.mode === 'dark' ? '' : 'light-mode'}`}>
+          <div className="skill">
             <div className="skill-title">
               <h3>HTML</h3>
             </div>
-            
-                <ProgressBar barContainerClassName="skill-container" completedClassName="progressbar progressbarhtml" completed={100} animateOnRender={true} />
-             
-            
+              <ProgressBar barContainerClassName="skill-container" completedClassName="progressbar progressbarhtml" completed={100} animateOnRender={true} />
+            </div>
             <div className="skill">
               <div className="skill-title">
                 <h3>CSS</h3>
@@ -72,9 +71,6 @@ export default function Skills(props) {
         
           <div className="icon">
             
-            {/* <div>
-              <h1>Skills</h1>
-            </div> */}
             <div className="iconsbs">
               <a className="" style={{ "--i": 1 }}>
                 <FaHtml5 />

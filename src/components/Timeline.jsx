@@ -32,15 +32,15 @@ export default function Timeline(props) {
             <>
               <span>College: </span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`} > Panipat Institute of Engg. & Tech</p>
               <br />
-              <span>CGPA: </span>
+              <span>CGPA: </span>7.7
             </>
           ), 
           cardDetailedText:(
             <>
               <span>Awards</span>
-              <li>Secured 1st in Blind C competition organised by PIET Panipat Institute of Engineering and Technology.</li>
+              <li>Secured 1st in Blind C competition organised by PIET Panipat Institute of Engineering and Technology. <a href=""><span>View Certificate</span></a></li>
               <br />
-              <li>Secured 2nd in CODE CLASH at PIET Panipat Institute of Engineering and Technology. </li>       
+              <li>Secured 2nd in CODE CLASH at PIET Panipat Institute of Engineering and Technology. <a href=""><span>View Certificate</span></a> </li>       
                 </>
           )     
       } ];

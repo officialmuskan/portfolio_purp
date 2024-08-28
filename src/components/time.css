@@ -2,8 +2,8 @@
     max-width: 1300px;
     /* border: 1px solid red; */
     height: 100vh;
-    margin: 0 auto 0 auto;
-    padding: 0 80px;
+    margin: auto;
+    padding: 0 70px;
 }
 .contentin{
     margin-top: 20px !important;
@@ -56,9 +56,18 @@ li{
 @media (max-width: 800px) {
     .max-width2{
         height: 140vh;
+        padding: 40px 0px 0px 20px;
     }
     .jIatKG h1{
         font-size: 1rem;
     }
     
 }
+
+@media (max-width: 400px) {
+    .max-width2{
+        height: 140vh;
+        padding: 40px 0px 0px 15px;
+    }
+}
+

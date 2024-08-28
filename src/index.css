@@ -26,7 +26,10 @@ body {
   /* background: radial-gradient(#10152a78, var(--background-col)); */
   background-color: var(--background-col);
   color: var(--text-color);
+
+  color: #252746;
   font-family: var(--body-font);
+
  }
 ul {
   list-style: none;
