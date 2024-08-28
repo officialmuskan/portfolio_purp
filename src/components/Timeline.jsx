@@ -38,9 +38,9 @@ export default function Timeline(props) {
           cardDetailedText:(
             <>
               <span>Awards</span>
-              <li>Secured 1st in Blind C competition organised by PIET Panipat Institute of Engineering and Technology. <a href=""><span>View Certificate</span></a></li>
+              <li>Secured 1st in Blind C competition organised by PIET Panipat Institute of Engineering and Technology. <a href="https://www.linkedin.com/posts/muskan-chhabra-661052227_secured-1st-in-blind-c-competition-organised-activity-7060967666315837441-j1M3?utm_source=share&utm_medium=member_desktop"><span>View Certificate</span></a></li>
               <br />
-              <li>Secured 2nd in CODE CLASH at PIET Panipat Institute of Engineering and Technology. <a href=""><span>View Certificate</span></a> </li>       
+              <li>Secured 2nd in CODE CLASH at PIET Panipat Institute of Engineering and Technology. <a href="https://www.linkedin.com/posts/muskan-chhabra-661052227_certificate-activity-7186710327445590016-67j5?utm_source=share&utm_medium=member_desktop"><span>View Certificate</span></a> </li>       
                 </>
           )     
       } ];
