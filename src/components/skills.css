@@ -147,9 +147,12 @@
 .skills.light-mode {
   color: #464866;
 }
-
+.skill-title h3{
+  color: white !important;
+}
 .skill-container {
   width: 100%;
+
   background-color: white;
   height: 18px;
   justify-content: flex-start;
