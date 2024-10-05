@@ -67,7 +67,7 @@ nav-link = #E0E0E1 same*/
 }
 
 .nav__link:hover {
-  color: var(--secondary-color) !important;
+  color: var(--sec-col) !important;
 }
 .nav__link.light-mode {
     color: #252746; /* Light mode color */
@@ -120,7 +120,7 @@ only when the device width is 768px or lower. */
         
       }
       .nav__menu.light-mode{
-        background-color: var(--secondary-color);
+        background-color: var(--sec-col);
       }
 
       .nav__sun{

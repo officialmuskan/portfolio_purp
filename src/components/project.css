@@ -6,7 +6,7 @@
 .max-width{
     height: 100vh;
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 50px;
     margin: 100px auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ h2{
 }
 .text-muted{
     font-family: "Open Sans";
-    color: var(--secondary-color) !important;
+    color: var(--sec-col) !important;
     font-size: clamp(10px, 1vw + 10px ,15px);
     
 }

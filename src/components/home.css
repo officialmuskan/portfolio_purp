@@ -20,16 +20,16 @@
 
 }
 .ptag.light-mode{
-    color: #252746 !important;
-    font-weight: 500 !important;
+    color: #252746 ;
+    font-weight: 500;
 
 }
 .contlogo{
-    color: var(--secondary-color);
+    color: var(--sec-col);
     right:  3px;
 }
 .cont.light-mode{
-    background-color: transparent !important;
+    background-color: transparent;
 }
 .downlogo, .contlogo{   
     position: relative;
@@ -38,6 +38,11 @@
     font-weight: bold;
     cursor: pointer;
     /* color: var(--background-col); */
+}
+h1{
+    text-align: center;
+    color: var(--sec-col);
+    font-size:clamp(50px, 7.5vw + 10px,60px);
 }
 .main{
     top: 0;
@@ -60,11 +65,7 @@
     
     width: 100%;
     text-align: center;
-    h1{
-        text-align: center;
-        color: var(--secondary-color) ;
-        font-size:clamp(50px, 7.5vw + 10px,60px);
-    }
+    
     .ptag{
         font-family: var(--second-font);
         color: var(--text-color);
@@ -113,7 +114,7 @@
 
 .down{
     width: 180px;
-    background-color: var(--secondary-color);
+    background-color: var(--sec-col);
     color: var(--background-col);
 }
 .cont:hover, .cont.light-mode:hover{
@@ -121,8 +122,8 @@
 }
 .cont{
     width: 162px;
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    border: 2px solid var(--sec-col);
+    color: var(--sec-col);
     background-color: var(--background-col);
 }
 .pink-highlight {
