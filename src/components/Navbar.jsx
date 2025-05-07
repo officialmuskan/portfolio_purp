@@ -72,9 +72,9 @@ export default function Navbar(props) {
         <nav className="nav container " style={{backgroundColor: props.mode === 'dark'? '#252746' : '#E0E0E1', color: props.mode === 'dark'? '#E0E0E1' : '252746'}}>
           <NavLink to="/" className={"nav__logo"}>
             <div className="box">
-              <div className="circle"><img className="circle" src={pic} alt="" /></div>
+              {/* <div className="circle"><img className="circle" src="" alt="" /></div> */}
               
-              Muskan
+              Vinky
             </div>
           </NavLink>
           {isMobile && (

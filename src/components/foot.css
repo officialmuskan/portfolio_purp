@@ -25,7 +25,8 @@
 }
 .max-width1.light-mode{
     /* background: #10152a; */
-    background-color: var(--background-col);
+    background: var(--text-col);
+    color: black;
 }
 .content h2{
     text-align: center;

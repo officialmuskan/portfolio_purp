@@ -7,9 +7,9 @@ export default function Timeline(props) {
         cardTitle: "Class 10",
         cardSubtitle:(
             <>
-              <span>School:</span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Shiva Shiksha Sadan</p>
+              <span>School:</span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Arya Girls Public School</p>
               <br />
-              <span>Percentage:</span> 92.8
+              
             </>
           )
                                      ,      
@@ -19,9 +19,9 @@ export default function Timeline(props) {
         cardSubtitle:(
             <>
                 
-              <span>School: </span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Shiva Shiksha Sadan</p>
+              <span>School: </span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Arya Girls Public School</p>
               <br />
-              <span>Percentage: </span> 95.2
+              
             </>
           ),      
       },
@@ -32,17 +32,10 @@ export default function Timeline(props) {
             <>
               <span>College: </span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`} > Panipat Institute of Engg. & Tech</p>
               <br />
-              <span>CGPA: </span>7.7
+              
             </>
           ), 
-          cardDetailedText:(
-            <>
-              <span>Awards</span>
-              <li>Secured 1st in Blind C competition organised by PIET Panipat Institute of Engineering and Technology. <a href="https://www.linkedin.com/posts/muskan-chhabra-661052227_secured-1st-in-blind-c-competition-organised-activity-7060967666315837441-j1M3?utm_source=share&utm_medium=member_desktop"><span>View Certificate</span></a></li>
-              <br />
-              <li>Secured 2nd in CODE CLASH at PIET Panipat Institute of Engineering and Technology. <a href="https://www.linkedin.com/posts/muskan-chhabra-661052227_certificate-activity-7186710327445590016-67j5?utm_source=share&utm_medium=member_desktop"><span>View Certificate</span></a> </li>       
-                </>
-          )     
+              
       } ];
     return(
         <>

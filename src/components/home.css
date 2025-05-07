@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: radial-gradient(circle, #000000ac, var(--background-col), var(--background-col));
-    -webkit-background: 100% 100%;
+    /* background: radial-gradient(circle, #000000ac, var(--background-col), var(--background-col)); */
+    /* -webkit-background: 100% 100%; */
     
     
     
@@ -16,11 +16,12 @@
 
 }
 .main.light-mode{
-    background: radial-gradient(var(--text-color), var(--text-color));
+    color: black;
+    background: radial-gradient(var(--text-color), var(--text-color)) !important;
 
 }
 .ptag.light-mode{
-    color: #252746 ;
+    color: black !important;
     font-weight: 500;
 
 }
