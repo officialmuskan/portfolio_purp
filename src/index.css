@@ -10,7 +10,7 @@
   /* 181927 */
   --header-height: 3.5rem;
   --background-col:#252746;
-  --secondary-color: #33CCFF;
+  --sec-col: #2ab0dd;
   --text-color: #E0E0E1;
   /* --body-color: hsl(0, 0%, 6%); */
   --body-font: "Montserrat", sans-serif;
@@ -26,8 +26,6 @@ body {
   /* background: radial-gradient(#10152a78, var(--background-col)); */
   background-color: var(--background-col);
   color: var(--text-color);
-
-  color: #252746;
   font-family: var(--body-font);
 
  }

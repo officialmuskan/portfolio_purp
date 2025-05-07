@@ -14,7 +14,7 @@ import { FaReact } from "react-icons/fa";
 export default function Skills(props) {
   return (
     <>
-      <div id="skill" className={`tools`}>
+      <div id="skill" className="tools">
         <div className="one">
           <h2><mark class='pink-highlight'>Skills and Proficiency</mark> </h2>
 

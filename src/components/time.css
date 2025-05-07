@@ -10,7 +10,7 @@
 }
 .jIatKG h1{
     font-size: 1.2rem;
-    color: var(--secondary-color);
+    color: var(--sec-col);
 }
 .eDQELy{
     padding: 0 !important;
@@ -39,7 +39,7 @@ li{
 }
 
 .mycard span{
-    color: var(--secondary-color) !important;
+    color: var(--sec-col) !important;
 }
 /* .hxLLRt{
     display: none !important;
