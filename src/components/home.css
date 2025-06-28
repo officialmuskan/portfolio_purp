@@ -220,6 +220,9 @@ h1{
         justify-content: center;
         
     }
+    .container1{
+        height: 150vmin;
+    }
     
     .down, .cont{
         justify-content: space-between;
