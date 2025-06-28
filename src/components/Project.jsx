@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react";
 import { projects } from "./data";
 import './project.css'
-import { FaGithub, } from "react-icons/fa6";
+import {GoArrowUpRight} from "react-icons/go";
 import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -13,16 +13,16 @@ export default function Project(props){
     return(
         <>
         
-        <div id="projects" className="max-width">
+        <div id="projects" className={`max-width ${props.mode === 'dark' ? '' : 'light-mode'}`}>
         
             <h2><mark class='pink-highlight'>My Projects</mark> </h2>
             
             <div className="carousel owl-carousel">
-            <Swiper slidesPerView={1} spaceBetween={30}  pagination={{
+            <Swiper slidesPerView={1} spaceBetween={80}  pagination={{
             clickable:true,
         }} breakpoints={{
-            500: {
-              slidesPerView: 2,
+            300: {
+              slidesPerView: 1,
               spaceBetween: 20,
             },
             768: {
@@ -39,15 +39,18 @@ export default function Project(props){
                 <SwiperSlide>
                    <div key={project.title} className={`card ${props.mode === 'dark' ? '' : 'light-mode'}`}>
                     <div className="image">
-                        <img src={project.image} alt="" />
+                        <img src={project.image} style={{borderRadius:"10px"}}alt="" />
                     </div>
                     <div className={`text ${props.mode === 'dark' ? '' : 'light-mode'}`}>
-
-                        <h2 className="title">{project.title}</h2>
-                        <h3 className="text-muted">Tech Stack&nbsp;&nbsp;{project.subtitle}</h3>
-                        <p>{project.description}</p>
-                        <button href="#" class="down"><i class="downlogo"><FaGithub/></i> Github</button>
-                    </div>
+                        <h3 style={{textAlign:"left"}} className="text-muted">Tech Stack :&nbsp; {project.subtitle}</h3>
+                        
+                        <h2 style={{textAlign:"left"}} className="title">{project.title}</h2>
+                        <p style={{textAlign:"left"}}>{project.description}</p>
+                        <div style={{marginLeft:"auto", marginTop:"0px"}}>
+                            <button href="#" className="github" style={{textAlign:"right"}}><i class="downlogo"><GoArrowUpRight size={30}/></i></button>
+                    
+                        </div>
+                        </div>
                </div> </SwiperSlide>
             ))}
             </Swiper> 

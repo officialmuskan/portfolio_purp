@@ -3,6 +3,7 @@
     /* border: 1px solid red; */
     height: 100vh;
     margin: auto;
+    margin-bottom: 100px;
     padding: 0 70px;
 }
 .contentin{
@@ -35,7 +36,7 @@ li{
     
 }
 .my-card-subtitle{
-    color: white !important;
+    color: var(--text-color) !important;
 }
 
 .mycard span{
@@ -69,5 +70,12 @@ li{
         height: 140vh;
         padding: 40px 0px 0px 15px;
     }
+}
+
+@media (max-width: 891px) {
+    .max-width2{
+         margin-bottom: 250px;
+    }
+    
 }
 

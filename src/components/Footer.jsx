@@ -7,20 +7,37 @@ export default function Footer(props) {
         <>
             <div id="contact" className={`max-width1 ${props.mode === 'dark' ? '' : 'light-mode'}` }>
                 <div className="content">
-                <h2>Reach out to me</h2>
+                <div className="div">
+                    <h2>Reach out to me</h2>
+                <p className="subhead">Available for collaboration, questions, or just a quick chat.</p>
                 
-                <div className="iconsfoot">
+                </div>
+                <div className="div">
+                    <h2>Phone No</h2>
+                    <p className="subhead">+91-8053123188</p>
+                </div>
+                <div className="div">
+                    <h2>Email</h2>
+                    <p className="subhead"><a href="mailto:muskanchhabra.0806@gmail.com">muskanchhabra.0806@gmail.com</a>
+                    </p>
+                </div>
+                <div className="div">
+                    <h2>Connect with me</h2>
+                    <div className="footericon">
                     <a href="https://github.com/officialmuskan"><FaGithub/></a>
                     <a href="mailto:muskanchhabra.0806@gmail.com"><FaMailBulk/></a>
                     <a href=""><FaInstagram/></a>
                     <a href="https://www.linkedin.com/in/muskan-chhabra-661052227/"><FaLinkedin/></a>
 
                 </div>
-                <h4>Made with <FaHeart color="red" size={13} /> by Muskan</h4>
                 </div>
-                <div className="svg">
-                    <img src = {happySvg} height={150} width={400}/>
+                
                 </div>
+                <hr className="hr" style={{background:"red"}}/>
+                
+                <p className="subhead last">Made with <FaHeart color="red" size={13} /> by Muskan</p>
+                
+               
 
             </div>
         </>

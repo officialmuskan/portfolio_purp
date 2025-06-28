@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
 import Project from './components/Project'
@@ -17,7 +16,7 @@ function App() {
   const toggleStyle = (cls)=>{
     if(mode === 'dark')
     {
-      document.body.style.backgroundColor = "#E0E0E1"
+      document.body.style.backgroundColor = "#f5f5f5"
       setMode("light")
     }
     else{
@@ -31,11 +30,11 @@ function App() {
     <ScrollToHashElement behavior="smooth" block='start' />
       <Router>
      <Navbar mode={mode} toggleStyle={toggleStyle}/>
-     <Home mode={mode}/>
-     <Skills mode={mode}/> 
-     <Project mode={mode}/>
-     <Timeline mode={mode}/>
-     <Footer mode={mode}/>
+     <Home mode={mode} toggleStyle={toggleStyle}/>
+     <Skills mode={mode} toggleStyle={toggleStyle}/> 
+     <Project mode={mode} toggleStyle={toggleStyle}/>
+     <Timeline mode={mode} toggleStyle={toggleStyle}/>
+     <Footer mode={mode} toggleStyle={toggleStyle}/>
 
    </Router>
     </>

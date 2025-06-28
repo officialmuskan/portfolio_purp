@@ -5,16 +5,16 @@ import image3 from '../assets/Untitled design (12).png'
 
 export const projects = [
     {
-        title : "Quizzy",
-        subtitle : "HTML, CSS, JS",
-        description:"This is a quiz application where one can participate in quiz and check his knowledge level with scores. ",
+        title : "ECOMMERCE WEBSITE",
+        subtitle : "MERN",
+        description:"An ecommerce application where one can search for products and can create their profiles and purchase products",
         image:image1,
         link:""
     },
     {
-        title : "Forecaster",
-        subtitle : "HTML, CSS, JS",
-        description:"You can check the weather of any area using this website and some bonus tips according to weather.",
+        title : "INOTEBOOK",
+        subtitle : "MERN",
+        description:"Developed for creating, updating, and deleting notes. You can login in and see the notes that belong to you",
         image:image2,
         link:""
     },

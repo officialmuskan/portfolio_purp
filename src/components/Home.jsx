@@ -1,6 +1,6 @@
 import "./home.css";
 import { NavLink } from 'react-router-dom'
-import { IoMdDownload, IoMdPhonePortrait } from "react-icons/io";
+import { IoMdDownload, IoMdArrowDown } from "react-icons/io";
 import React, { useState } from "react";
 export default function Home(props) {
     const fileUrl = 'https://drive.google.com/file/d/1MhLUZXpAIgac451qABZWBr4OZN4l7VR8/view?usp=sharing';
@@ -15,10 +15,10 @@ export default function Home(props) {
                 <p className={`ptag ${props.mode === 'dark' ? '' : 'light-mode'}`}> A &nbsp;<mark class='pink-highlight'>Web developer</mark> &nbsp; with a passion for creating websites. Dive into my world of code where every project is a new adventure, and every website is a story waiting to be told.
 </p>
                 <div className="buttons">
-                    <a  className="downlogo" href={fileUrl}><button className="down "><IoMdDownload/>Download Resume</button>
+                    <a  className="downlogo" href={fileUrl}><button className="down">Download CV<a className="down2logo"><IoMdArrowDown/></a></button>
                     </a>
                     <NavLink to="/#contact" onClick={()=>handleClick('/contactme')}>
-                    <button className={`cont ${props.mode === 'dark' ? '' : 'light-mode'}`}><a className="contlogo "><IoMdPhonePortrait/></a>Contact Me</button>
+                    <button className={`cont ${props.mode === 'dark' ? '' : 'light-mode'}`}>Contact Me <a className="contlogo"><IoMdArrowDown/></a></button>
                     </NavLink>
                 </div>
             </div>
