@@ -25,7 +25,6 @@ export default function Footer(props) {
                     <h2>Connect with me</h2>
                     <div className="footericon">
                     <a href="https://github.com/officialmuskan"><FaGithub/></a>
-                    <a href="mailto:muskanchhabra.0806@gmail.com"><FaMailBulk/></a>
                     <a href=""><FaInstagram/></a>
                     <a href="https://www.linkedin.com/in/muskan-chhabra-661052227/"><FaLinkedin/></a>
 

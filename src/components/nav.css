@@ -1,6 +1,4 @@
-/* background =  #252746
-logo text = #33CCFF font Monsterrat
-nav-link = #E0E0E1 same*/
+
 
 .header {
   position: fixed;
@@ -35,7 +33,7 @@ nav-link = #E0E0E1 same*/
 }
 .nav__logo {
     
-  color: #33ccff;
+  color: #C5757C;
   transition: color 0.4s;
   font-size: var(--h2-font-size);
   font-family: var(--body-font);
@@ -59,7 +57,7 @@ nav-link = #E0E0E1 same*/
 
 
 .nav__link {
-  color: var(--text-color);
+  color: #F9AAAD;
   font-family: "Open Sans";
   font-weight: var(--font-semi-bold);
   transition: color 0.4s;

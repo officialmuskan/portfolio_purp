@@ -8,6 +8,7 @@
   max-width: 1300px;
 } */
 .tools{
+  /* background-color: #462037; */
   align-items: center;
   justify-content: space-between;
   display: flex;
@@ -16,7 +17,7 @@
   max-width: 1200px;
   /* padding: 0 0 0px 90px; */
   margin: auto;
- 
+   
   /* margin: 50px auto 0 auto; */
   /* border: 5px solid black; */
   /* overflow: hidden; */
@@ -86,7 +87,7 @@
   align-items: center;
 }
 .icon .iconsbs a {
-  color: #464866;
+  color: #A1525F;
   font-size: 80px;
   position: absolute;
   transition: 0.5s;
@@ -144,7 +145,7 @@
 }
 .skill-container {
   width: 100%;
-  /* background-color: white; */
+  background-color: #F9AAAD;
   height: 18px;
   justify-content: flex-start;
   align-items: center;
@@ -155,7 +156,7 @@
 
 .progressbar {
   margin-top: 10px;
-  background: #464866;
+  background: #A1525F;
   height: 18px;
   width: 0;
 }

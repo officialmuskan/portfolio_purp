@@ -6,7 +6,7 @@
     justify-content: center;
     width: 100%;
     /* height: 70vmin; */
-    background: radial-gradient(circle, #000000ac, var(--background-col), var(--background-col));
+    background: radial-gradient(circle, #000000, var(--background-col), var(--background-col));
     -webkit-background: 100% 100%;
     
     
@@ -33,14 +33,14 @@
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    color: var(--sec-col);
+    background-color: #F9AAAD;
+    color: #462037
 }
 .contlogo{
     background: var(--sec-col);
     border: 1px solid var(--sec-col) ;
     border-radius: 50%;
-    color: white;
+    color: #462037;
     /* right:  3px; */
     width: 35px;
     height: 35px;
@@ -63,7 +63,7 @@
 }
 h1{
     text-align: center;
-    color: var(--sec-col);
+    color: #C5757C;
     font-size:clamp(50px, 7.5vw + 10px,60px);
 }
 .main{
@@ -90,7 +90,7 @@ h1{
     
     .ptag{
         font-family: var(--second-font);
-        color: var(--text-color);
+        color: #f9d1d2;
         font-size: clamp(15px, 2vw + 5px, 20px);
         text-align: center;
         font-weight: 500 ;
@@ -145,14 +145,19 @@ h1{
     color: var(--background-col);
 }
 .cont:hover, .cont.light-mode:hover{
-    background-color: #33ccff48 !important;
+    background-color: #F9AAAD !important;
+}
+.down:hover{
+    color: #F9AAAD;
+    border: 1px solid #F9AAAD;
+    background-color:transparent
 }
 .cont{
     padding: 0px 10px 0 17px;
     width: 162px;
     border: 2px solid var(--sec-col);
     color: var(--sec-col);
-    background-color: var(--background-col);
+    background-color:transparent;
 }
 .pink-highlight {
     animation: progress-c 3s normal forwards; 

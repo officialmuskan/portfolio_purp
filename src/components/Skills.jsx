@@ -16,7 +16,7 @@ export default function Skills(props) {
     <>
       <div id="skill" className="tools">
         <div className="one">
-          <h2><mark class='pink-highlight'>Skills and Proficiency</mark> </h2>
+          <h2 className={` ${props.mode === 'dark' ? '' : 'light-mode'}`} >Skills and Proficiency </h2>
 
           <div className={`skills ${props.mode === 'dark' ? '' : 'light-mode'}`}>
           <div className="skill">

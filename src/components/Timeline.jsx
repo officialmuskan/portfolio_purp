@@ -26,8 +26,8 @@ export default function Timeline(props) {
           ),      
       },
       {
-        title: "2024",
-        cardTitle: "BTECH CSE - Final Year",
+        title: "2025",
+        cardTitle: "BTECH CSE - Graduated",
         cardSubtitle:(
             <>
               <span>College: </span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`} > Panipat Institute of Engg. & Tech</p>
@@ -48,15 +48,15 @@ export default function Timeline(props) {
         <>
             <div id='about' className="max-width2">
                 
-            <h2><mark class='pink-highlight'>About Me</mark> </h2>
+            <h2 className={`${props.mode === 'dark' ? '' : 'light-mode'}`}>About Me </h2>
             <div className="contentin"> 
                 
                 <Chrono disableToolbar="true" classNames={{card: props.mode === 'dark' ? 'mycard':'cardlight' , cardSubTitle: 'my-card-subtitle'}} items={items} mode="VERTICAL_ALTERNATING" cardHeight="100vw"
-                theme={{primary: '#33CCFF',
-                    secondary: '#252746',
-                    cardBgColor:props.mode === 'dark' ? "#464866":'white',
-                    titleColor: '#33CCFF',
-                    titleColorActive: '#33CCFF',}} enableBreakPoint="true" responsiveBreakPoint="600"/>
+                theme={{primary: '#462037',
+                    secondary: '#683A46',
+                    cardBgColor:props.mode === 'dark' ? "transparent":'white',
+                    titleColor: '#462037',
+                    titleColorActive: '#fff',}} enableBreakPoint="true" responsiveBreakPoint="600"/>
                 
             </div>
                 </div>

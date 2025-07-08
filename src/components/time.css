@@ -11,7 +11,7 @@
 }
 .jIatKG h1{
     font-size: 1.2rem;
-    color: var(--sec-col);
+    color: #683A46;
 }
 .eDQELy{
     padding: 0 !important;
@@ -26,7 +26,7 @@
 
 li{
     
-    color: white !important;
+    color: var(--sec-col) !important;
 }
 .mycard{
     /* background-color: #464866 !important; */
@@ -36,7 +36,7 @@ li{
     
 }
 .my-card-subtitle{
-    color: var(--text-color) !important;
+    color: var(--sec-col) !important;
 }
 
 .mycard span{

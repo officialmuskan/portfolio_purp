@@ -20,7 +20,7 @@ function App() {
       setMode("light")
     }
     else{
-      document.body.style.backgroundColor = "#252746"
+      document.body.style.backgroundColor = "#140E1C"
       setMode('dark')
     }
   }

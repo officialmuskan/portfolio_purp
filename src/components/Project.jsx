@@ -15,19 +15,23 @@ export default function Project(props){
         
         <div id="projects" className={`max-width ${props.mode === 'dark' ? '' : 'light-mode'}`}>
         
-            <h2><mark class='pink-highlight'>My Projects</mark> </h2>
+            <h2>My Projects</h2>
             
             <div className="carousel owl-carousel">
-            <Swiper slidesPerView={1} spaceBetween={80}  pagination={{
+            <Swiper slidesPerView={1} spaceBetween={90}  pagination={{
             clickable:true,
         }} breakpoints={{
             300: {
               slidesPerView: 1,
               spaceBetween: 20,
             },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
+            500:{
+                slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            868: {
+              slidesPerView: 3,
+              spaceBetween: 30,
             },
             1024: {
               slidesPerView: 3,
