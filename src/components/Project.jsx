@@ -51,7 +51,7 @@ export default function Project(props){
                         <h2 style={{textAlign:"left"}} className="title">{project.title}</h2>
                         <p style={{textAlign:"left"}}>{project.description}</p>
                         <div style={{marginLeft:"auto", marginTop:"0px", display:'flex', justifyContent:'center', alignItems:'center', textAlign:'center'}}>
-                            <button href="#" className="github"><i class="downlogo" style={{}}><GoArrowUpRight size={25}/></i></button>
+                            <a href={project.link} className="github"><i class="downlogo" style={{}}><GoArrowUpRight size={23}/></i></a>
                     
                         </div>
                         </div>
