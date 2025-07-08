@@ -94,14 +94,14 @@ h2{
 }
 
 .github{
-    font-size: 1.6rem;
+    font-size: 1rem;
     border-radius: 50px !important;
     height: 40px;
     width: 40px;
     border: none;
     display: flex;
     justify-content: center;
-    align-items: centert;
+    align-items: center;
     text-align: center;
     color: var(--sec-col);
     background-color: #462046;
