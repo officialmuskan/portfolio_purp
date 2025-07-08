@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { IoMdDownload, IoMdArrowDown } from "react-icons/io";
 import React, { useState } from "react";
 export default function Home(props) {
-    const fileUrl = 'https://drive.google.com/file/d/1MhLUZXpAIgac451qABZWBr4OZN4l7VR8/view?usp=sharing';
+    const fileUrl = 'https://drive.google.com/file/d/1E4232-xLg-udLDlWgivpI0XONcXM-PQE/view?usp=sharing';
 
     return(
         <>
