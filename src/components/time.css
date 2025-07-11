@@ -11,7 +11,7 @@
 }
 .jIatKG h1{
     font-size: 1.2rem;
-    color: #683A46;
+    color: var(--background-col);
 }
 .eDQELy{
     padding: 0 !important;
@@ -40,7 +40,7 @@ li{
 }
 
 .mycard span{
-    color: var(--sec-col) !important;
+    color: var(--background-col) !important;
 }
 /* .hxLLRt{
     display: none !important;
@@ -53,7 +53,12 @@ li{
     }
     
 }
-
+.light-mode .hWokMX,.light-mode .guQygA{
+    background-color: white;
+}
+.light-mode .ixtlPK{
+    background-color: white;
+}
 @media (max-width: 800px) {
     .max-width2{
         height: 140vh;
@@ -67,11 +72,10 @@ li{
 
 @media (max-width: 400px) {
     .max-width2{
-        height: 140vh;
+        height: 240vmin;
         padding: 40px 0px 0px 15px;
     }
 }
-
 @media (max-width: 891px) {
     .max-width2{
          margin-bottom: 250px;

@@ -7,7 +7,7 @@ export default function Timeline(props) {
         cardTitle: "Class 10",
         cardSubtitle:(
             <>
-              <span>School:</span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Shiva Shiksha Sadan</p>
+              <span style={{color:'red'}}>School:</span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Shiva Shiksha Sadan</p>
               <br />
               <span>Percentage:</span> 92.8
             </>
@@ -46,16 +46,17 @@ export default function Timeline(props) {
       } ];
     return(
         <>
-            <div id='about' className="max-width2">
+            <div id="about" className={`max-width2 ${props.mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
+
                 
             <h2 className={`${props.mode === 'dark' ? '' : 'light-mode'}`}>About Me </h2>
             <div className="contentin"> 
                 
                 <Chrono disableToolbar="true" classNames={{card: props.mode === 'dark' ? 'mycard':'cardlight' , cardSubTitle: 'my-card-subtitle'}} items={items} mode="VERTICAL_ALTERNATING" cardHeight="100vw"
                 theme={{primary: '#462037',
-                    secondary: '#683A46',
-                    cardBgColor:props.mode === 'dark' ? "transparent":'white',
-                    titleColor: '#462037',
+                    secondary: '#140E1C',
+                    cardBgColor:props.mode === 'dark' ? "#462037":'transparent',
+                    titleColor: '#C5757C',
                     titleColorActive: '#fff',}} enableBreakPoint="true" responsiveBreakPoint="600"/>
                 
             </div>
