@@ -54,10 +54,10 @@ li{
     
 }
 .light-mode .hWokMX,.light-mode .guQygA{
-    background-color: white;
+    background-color: white !important;
 }
 .light-mode .ixtlPK{
-    background-color: white;
+    background-color: white !important;
 }
 @media (max-width: 800px) {
     .max-width2{
