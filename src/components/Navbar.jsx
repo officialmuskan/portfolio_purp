@@ -1,10 +1,11 @@
 import "./nav.css";
 import pic from "../assets/profile-pic (3).png"
 import React, { useState } from "react";
-import { IoMdSunny, IoMdMoon } from "react-icons/io";
+import { IoMdSunny, IoMdMoon, IoMdMenu } from "react-icons/io";
 import { useMediaQuery } from "react-responsive";
 // import "./NavbarMobile.css";
-import { IoClose, IoMenu } from "react-icons/io5";
+// import { IoMdMenu } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
 import { NavLink,useLocation } from "react-router-dom";
 export default function Navbar(props) {
   let location = useLocation();
@@ -79,7 +80,7 @@ export default function Navbar(props) {
           </NavLink>
           {isMobile && (
           <div className={`nav__toggle ${props.mode === 'dark' ? 'dark-mode' : 'light-mode'}`} id="nav-toggle" onClick={toggleMenu}>
-            <IoMenu />
+            <IoMdMenu />
           </div>
         )}
         {isMobile ? (

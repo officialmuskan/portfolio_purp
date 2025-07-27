@@ -8,6 +8,7 @@
     /* height: 70vmin; */
     background: radial-gradient(circle, #000000, var(--background-col), var(--background-col));
     -webkit-background: 100% 100%;
+    /* color: #F9AAAD */
     
     
     
@@ -21,12 +22,12 @@
 
 }
 .ptag.light-mode{
-    color: #252746 ;
-    font-weight: 500;
-
+    color: #462037 !important;
+    
 }
+
 .down2logo{
-    border-radius: 50%;
+     border-radius: 50%; 
     width: 35px;
     height: 35px; 
     display: flex;
@@ -34,38 +35,41 @@
     justify-content: center;
     align-items: center;
     background-color: #F9AAAD;
-    color: #462037
-}
+    color: #462037;
+    border:none;
+    /* font-size: 10px; */
+} 
 .contlogo{
     background: var(--sec-col);
-    border: 1px solid var(--sec-col) ;
+    border: none !important;
     border-radius: 50%;
     color: #462037;
     /* right:  3px; */
     width: 35px;
     height: 35px;
     display: flex;
+    /* font-size: 10rem; */
     font-weight: bold;
     justify-content: center;
     align-items: center;
 
 }
+
 .cont.light-mode{
+    color: #462037 !important;
     background-color: transparent;
 }
 .downlogo, .contlogo{   
-    /* position: relative; */
-   /* top: 3px; */
-    font-size: 1.19rem;
+    
     font-weight: bold;
     cursor: pointer;
-    /* color: var(--background-col); */
 }
 h1{
     text-align: center;
-    color: #C5757C;
+    color:#F9AAAD;
     font-size:clamp(50px, 7.5vw + 10px,60px);
 }
+
 .main{
     top: 0;
     left: 0;
@@ -93,7 +97,6 @@ h1{
         color: #f9d1d2;
         font-size: clamp(15px, 2vw + 5px, 20px);
         text-align: center;
-        font-weight: 500 ;
         margin: 0px 0 35px 0;
         width: 90%;
         
@@ -142,7 +145,7 @@ h1{
     padding: 0px 10px 0 17px;
     width: 170px;
     background-color: var(--sec-col);
-    color: var(--background-col);
+    color: #462037;
 }
 .cont:hover, .cont.light-mode:hover{
     background-color: #F9AAAD !important;
@@ -163,21 +166,25 @@ h1{
     animation: progress-c 3s normal forwards; 
   
         /* font-weight: 500 !important; */
-        font-family: var(--second-font);
-        font-weight: bold;
-        color: var(--background-col);
-        margin: 0 -0.4em;
-        padding: 0.1em 0.4em;
-        border-radius: 0.8em 0.3em;
-        background: transparent;
-        background-image: linear-gradient(
-          to right,
-          rgba(255, 225, 0, 0.1),
-          rgba(255, 225, 0, 0.7) 4%,
-          rgba(255, 225, 0, 0.3)
-        );
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
+        background: linear-gradient(
+      100deg,
+      rgba(255, 221, 64, 0) 0.9%,
+      var(--background-col)0.4%,
+      var(--sec-col)5.8%,
+      rgba(255, 221, 64, 0.1) 93%,
+      var(--background-col) 96%,
+      rgba(255, 221, 64, 0) 98%
+    ),
+    linear-gradient(
+      180deg,
+      var(--background-col) 0%,
+      var(--sec-col) 7.9%,
+      var(--background-col) 15%
+    ) !important;
+  border-radius: 0.125em;
+  box-decoration-break: clone;
+  padding: 0.125em 0.25em;
+  color: var(--text-color) !important;
       
 }
 
@@ -212,7 +219,7 @@ h1{
     .main{
         p{
             hyphens: auto;
-            text-align: left !important;
+            /* text-align: left !important; */
             font-size: 14px !important;
         }
     }
@@ -263,3 +270,12 @@ h1{
 		transform: translateY(0);
 	}
 }
+
+/* @keyframes progress-c {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+} */

@@ -2,35 +2,13 @@ import './time.css'
 import { Chrono } from "react-chrono";
 import React, { useState } from "react";
 export default function Timeline(props) {
-    const items = [{
-        title: "2019",
-        cardTitle: "Class 10",
-        cardSubtitle:(
-            <>
-              <span style={{color:'red'}}>School:</span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Shiva Shiksha Sadan</p>
-              <br />
-              <span>Percentage:</span> 92.8
-            </>
-          )
-                                     ,      
-      },{
-        title: "2021",
-        cardTitle: "Class 12",
-        cardSubtitle:(
-            <>
-                
-              <span>School: </span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Shiva Shiksha Sadan</p>
-              <br />
-              <span>Percentage: </span> 95.2
-            </>
-          ),      
-      },
+    const items = [
       {
         title: "2025",
         cardTitle: "BTECH CSE - Graduated",
         cardSubtitle:(
             <>
-              <span>College: </span> <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`} > Panipat Institute of Engg. & Tech</p>
+              <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`} > Panipat Institute of Engineering & Technology</p>
               <br />
               <span>CGPA: </span>7.7
             </>
@@ -43,7 +21,32 @@ export default function Timeline(props) {
               <li>Secured 2nd in CODE CLASH at PIET Panipat Institute of Engineering and Technology. <a href="https://www.linkedin.com/posts/muskan-chhabra-661052227_certificate-activity-7186710327445590016-67j5?utm_source=share&utm_medium=member_desktop"><span>View Certificate</span></a> </li>       
                 </>
           )     
-      } ];
+      },
+      {
+        title: "2021",
+        cardTitle: "Class 12",
+        cardSubtitle:(
+            <>
+                
+               <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Shiva Shiksha Sadan</p>
+              <br />
+              <span>Percentage: </span> 95.2
+            </>
+          ),      
+      },
+      {
+        title: "2019",
+        cardTitle: "Class 10",
+        cardSubtitle:(
+            <>
+               <p className={`para  ${props.mode === 'dark' ? '' : 'light-mode'}`}>Shiva Shiksha Sadan</p>
+              <br />
+              <span>Percentage:</span> 92.8
+            </>
+          )
+                                     ,      
+      }
+       ];
     return(
         <>
             <div id="about" className={`max-width2 ${props.mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
@@ -53,9 +56,9 @@ export default function Timeline(props) {
             <div className="contentin"> 
                 
                 <Chrono disableToolbar="true" classNames={{card: props.mode === 'dark' ? 'mycard':'cardlight' , cardSubTitle: 'my-card-subtitle'}} items={items} mode="VERTICAL_ALTERNATING" cardHeight="100vw"
-                theme={{primary: '#462037',
+                theme={{primary: '#F9AAAD',
                     secondary: '#140E1C',
-                    cardBgColor:props.mode === 'dark' ? "#462037":'transparent',
+                    cardBgColor:'transparent',
                     titleColor: '#C5757C',
                     titleColorActive: '#fff',}} enableBreakPoint="true" responsiveBreakPoint="600"/>
                 

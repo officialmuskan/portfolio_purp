@@ -11,7 +11,8 @@
   z-index: var(--z-fixed);
 }
 .nav {
-    background-color: transparent !important;
+  color: #f9d1d2;
+  background-color: transparent !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,6 +21,7 @@
   margin: 1rem 2rem;
 }
 .box {
+  color: #f9d1d2;
   display: flex;
   gap: 0.3rem;
   justify-content: center;
@@ -32,8 +34,7 @@
   /* background-image: url("../assets/profile-pic (3).png"); */
 }
 .nav__logo {
-    
-  color: #C5757C;
+
   transition: color 0.4s;
   font-size: var(--h2-font-size);
   font-family: var(--body-font);
@@ -44,7 +45,8 @@
 .nav__toggle,
 .nav__close {
   font-size: 1.5rem;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: #f9d1d2;
   cursor: pointer;
 }
 .nav__toggle.light-mode,

@@ -7,11 +7,14 @@
     padding: 0 70px;
 }
 .contentin{
+    
     margin-top: 20px !important;
+    overflow-x: hidden !important;
 }
+
 .jIatKG h1{
     font-size: 1.2rem;
-    color: var(--background-col);
+    color: #F9AAAD;
 }
 .eDQELy{
     padding: 0 !important;
@@ -20,13 +23,16 @@
     display: inline;
 }
 .cardlight{
+    background-color: #F9AAAD !important;
     color: var(--background-col) !important;
 }
 
-
+.card-sub-title{
+    color: var(--background-col) !important;
+}
 li{
     
-    color: var(--sec-col) !important;
+    color: #F9AAAD !important;
 }
 .mycard{
     /* background-color: #464866 !important; */
@@ -36,11 +42,11 @@ li{
     
 }
 .my-card-subtitle{
-    color: var(--sec-col) !important;
+    color:  #F9AAAD !important;
 }
 
 .mycard span{
-    color: var(--background-col) !important;
+    color: var(--sec-col) !important;
 }
 /* .hxLLRt{
     display: none !important;
@@ -55,9 +61,11 @@ li{
 }
 .light-mode .hWokMX,.light-mode .guQygA{
     background-color: white !important;
+    color: black !important;
 }
 .light-mode .ixtlPK{
     background-color: white !important;
+     color: black !important;
 }
 @media (max-width: 800px) {
     .max-width2{

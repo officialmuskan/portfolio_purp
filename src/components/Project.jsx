@@ -4,10 +4,12 @@ import './project.css'
 import {GoArrowUpRight} from "react-icons/go";
 import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
+import {BsArrowUpRightCircleFill } from "react-icons/bs";
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 import { FreeMode, Pagination } from "swiper/modules";
 import $ from "jquery"
+
 
 export default function Project(props){
     return(
@@ -18,7 +20,7 @@ export default function Project(props){
             <h2>My Projects</h2>
             
             <div className="carousel owl-carousel">
-            <Swiper slidesPerView={1} spaceBetween={90}  pagination={{
+            <Swiper spaceBetween={100}  pagination={{
             clickable:true,
         }} breakpoints={{
             300: {
@@ -43,15 +45,16 @@ export default function Project(props){
                 <SwiperSlide>
                    <div key={project.title} className={`card ${props.mode === 'dark' ? '' : 'light-mode'}`}>
                     <div className="image">
-                        <img src={project.image} style={{borderRadius:"10px"}}alt="" />
+                        <img src={project.image} style={{borderRadius:"0px"}}alt="" />
                     </div>
                     <div className={`text ${props.mode === 'dark' ? '' : 'light-mode'}`}>
-                        <h3 style={{textAlign:"left"}} className="text-muted">Tech Stack :&nbsp; {project.subtitle}</h3>
                         
-                        <h2 style={{textAlign:"left"}} className="title">{project.title}</h2>
-                        <p style={{textAlign:"left"}}>{project.description}</p>
-                        <div style={{marginLeft:"auto", marginTop:"0px", display:'flex', justifyContent:'center', alignItems:'center', textAlign:'center'}}>
-                            <a href={project.link} className="github"><i class="downlogo" style={{}}><GoArrowUpRight size={23}/></i></a>
+                        <h2 style={{textAlign:"left"}} className="title">
+                          {project.title}</h2>
+                        <p style={{textAlign:"left", opacity:0.7}}>{project.description}</p>
+                        <div style={{marginTop:"0px", display:'flex', justifyContent:'space-between', alignItems:'centert', textAlign:'center'}}>
+                          <button style={{textAlign:"left"}} className="text-muted">{project.subtitle} Stack</button>
+                            <a href={project.link} className="github"><BsArrowUpRightCircleFill className="github" size={23}/></a>
                     
                         </div>
                         </div>

@@ -144,9 +144,10 @@
   color: black;
 }
 .skill-container {
+  border-radius: 10px;
   width: 100%;
-  background-color: #F9AAAD;
-  height: 18px;
+  background-color: #eecccd;
+  height: 10px;
   justify-content: flex-start;
   align-items: center;
   position: relative;
@@ -156,10 +157,21 @@
 
 .progressbar {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: red !important;
+  flex-direction: column;
   background: #A1525F;
-  height: 18px;
+  border-radius: 10px;
+  height: 10px;
   width: 0;
+  span{
+    color: #eecccd !important;
+    font-size: 10px !important;
+  }
 }
+
 .progressbarhtml {
   animation: progress-html 3s normal forwards;
 }

@@ -23,7 +23,7 @@ export default function Skills(props) {
             <div className="skill-title">
               <h3>HTML</h3>
             </div>
-              <ProgressBar barContainerClassName="skill-container" completedClassName="progressbar progressbarhtml" completed={100} animateOnRender={true} />
+              <ProgressBar barContainerClassName="skill-container" completedClassName="progressbar progressbarhtml" completed={95} customLabelClass="label" animateOnRender={true} />
             </div>
             <div className="skill">
               <div className="skill-title">
